@@ -16,6 +16,22 @@ function clearAll() {
     quote.innerHTML = '';
     riddle.innerHTML = '';
   }
+
+function clearAll2() {
+    const meme = document.querySelector('.meme-content');
+    const joke = document.querySelector('.joke-content');
+    const quote = document.querySelector('.quote-content');
+    const riddle = document.querySelector('.riddle-content');
+
+    if (!meme.hasChildNodes() && !joke.hasChildNodes() && !quote.hasChildNodes() && !riddle.hasChildNodes()) {
+        alert('All sections are already clear!!!');
+    } else {
+        meme.innerHTML = '';
+        joke.innerHTML = '';
+        quote.innerHTML = '';
+        riddle.innerHTML = '';
+    }
+}
   
   function showMeme() {
       // Value should be a string representing image URL
